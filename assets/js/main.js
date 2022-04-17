@@ -63,7 +63,6 @@ sr.reveal(".about__img", { delay: 500 });
 sr.reveal(".about__subtitle", { delay: 300 });
 sr.reveal(".about__profession", { delay: 400 });
 sr.reveal(".about__text", { delay: 500 });
-sr.reveal(".about__social-icon", { delay: 600, interval: 200 });
 
 /*SCROLL SKILLS*/
 sr.reveal(".skills__subtitle", {});
@@ -78,6 +77,7 @@ sr.reveal(".contact__subtitle", {});
 sr.reveal(".contact__text", { interval: 200 });
 sr.reveal(".contact__input", { delay: 400 });
 sr.reveal(".contact__button", { delay: 600 });
+sr.reveal(".footer__social-icon", { delay: 600, interval: 200 });
 
 /*===== FIX HEADER BACKGROUND COLOR =====*/
 let viewportWidth = window.innerWidth;
