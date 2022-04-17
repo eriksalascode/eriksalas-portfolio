@@ -169,7 +169,7 @@ const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
 /*===== IMPLEMENT SMOOT SCROLLING IN ALL BROWSERS =====*/
-const allLinks = document.querySelectorAll("a:link");
+const allLinks = document.querySelectorAll(".select-link");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
