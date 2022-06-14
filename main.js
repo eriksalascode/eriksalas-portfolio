@@ -1,4 +1,12 @@
 /*===== MENU SHOW =====*/
+const toggleIcon = () => {
+  const icon = document.querySelector("#nav-toggle ion-icon");
+  let newName = icon.getAttribute("name");
+
+  newName = newName === "menu-outline" ? "close-outline" : "menu-outline";
+  icon.setAttribute("name", newName);
+};
+
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId);
@@ -6,6 +14,7 @@ const showMenu = (toggleId, navId) => {
   if (toggle && nav) {
     toggle.addEventListener("click", () => {
       nav.classList.toggle("show");
+      toggleIcon();
     });
   }
 };
@@ -17,6 +26,7 @@ const navLink = document.querySelectorAll(".nav__link");
 function linkAction() {
   const navMenu = document.getElementById("nav-menu");
   navMenu.classList.remove("show");
+  toggleIcon();
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
