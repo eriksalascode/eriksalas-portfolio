@@ -7,7 +7,7 @@
   --font-low: 500;
 }
 
-/*===== Colores =====*/
+/*===== COLORS =====*/
 /* 
 #0A0A0A
 #121212
@@ -176,6 +176,7 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
@@ -458,11 +459,14 @@ textarea {
   color: var(--medium-text);
   font-family: var(--body-font);
 }
-.contact__button {
+
+/* .contact__button  */
+input[type="submit"] {
   display: block;
   background-color: var(--second-color-light);
   color: var(--surface-dark);
-  padding: 0.75rem 2.5rem;
+  /* padding: 0.75rem 2.5rem; */
+  padding: 12px 40px;
   margin-left: auto;
   border-radius: 0.5rem;
   border: none;
