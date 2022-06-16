@@ -396,6 +396,8 @@ img {
     var(--gradient-right) 100%
   );
   color: var(--first-color-light);
+  font-size: var(--normal-font-size);
+  font-weight: bolder;
   border-radius: 0.5rem;
   /* cursor: pointer; */
   backdrop-filter: blur(10px);
@@ -404,16 +406,17 @@ img {
 .portfolio__img:hover .portfolio__link {
   bottom: 0;
 }
+
 .portfolio__link-name {
   display: block;
   /* background-color: var(--second-color-light); */
   color: var(--high-text);
-  padding: 0.75rem 2.5rem;
+  padding: 0.75rem 2rem;
   margin-left: auto;
   border-radius: 0.5rem;
   border: 1px solid var(--high-text);
   outline: none;
-  font-size: var(--normal-font-size);
+  font-size: var(--small-font-size);
   font-weight: bold;
   cursor: pointer;
 }
@@ -460,14 +463,14 @@ textarea {
   font-family: var(--body-font);
 }
 
-/* .contact__button  */
-input[type="submit"] {
+/* input[type="submit"]  */
+.contact__button {
   display: block;
   background-color: var(--second-color-light);
   color: var(--surface-dark);
-  /* padding: 0.75rem 2.5rem; */
-  padding: 12px 40px;
-  margin-left: auto;
+  padding: 0.75rem 2rem;
+  /* padding: 12px 40px; */
+  margin: auto;
   border-radius: 0.5rem;
   border: none;
   outline: none;
